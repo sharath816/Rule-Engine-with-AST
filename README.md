@@ -20,16 +20,16 @@
 ![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/e65c86d9db889d2ef9da687165aa76a4b0aad9b3/Screenshot%202024-10-21%20183126.png)
 
 # **Combined rule added to the table** 
-![Image Alt]()
+![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/3b5af52f36dc3c6057843b7a5a2caba75b0f4640/Screenshot%202024-10-21%20183142.png)
 
 # **After adding thecombined rule to the table** 
-![Image Alt]()
+![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/3b5af52f36dc3c6057843b7a5a2caba75b0f4640/Screenshot%202024-10-21%20183157.png)
 
 # **Adding parameter to evaluate** 
-![Image Alt]()
+![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/3b5af52f36dc3c6057843b7a5a2caba75b0f4640/Screenshot%202024-10-21%20183224.png)
 
 # **Evaluation Result {False}** 
-![Image Alt]()
+![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/3b5af52f36dc3c6057843b7a5a2caba75b0f4640/Screenshot%202024-10-21%20183324.png)
 
 # **Evaluation Result {True}** 
-![Image Alt]()
+![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/3b5af52f36dc3c6057843b7a5a2caba75b0f4640/Screenshot%202024-10-21%20183344.png)
