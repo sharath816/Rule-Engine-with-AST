@@ -10,26 +10,26 @@
 # **Initial Page** 
 ![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/6347bf6affae6a4bfe1ab4c91834dc22e9262b81/Screenshot%202024-10-21%20182939.png)
 
-# **Initial Page** 
+# **Adding Rule** 
 ![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/c6a5675f620b5cdce28d890309d64fb6b7c40813/Screenshot%202024-10-21%20183038.png)
 
-# **Initial Page** 
+# **Rule Created** 
+![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/fddc47ab8063611c6638894353b3f98051016d7c/Screenshot%202024-10-21%20183106.png)
+
+# **Combiing the rule** 
 ![Image Alt]()
 
-# **Initial Page** 
+# **Combined rule added to the table** 
 ![Image Alt]()
 
-# **Initial Page** 
+# **After adding thecombined rule to the table** 
 ![Image Alt]()
 
-# **Initial Page** 
+# **Adding parameter to evaluate** 
 ![Image Alt]()
 
-# **Initial Page** 
+# **Evaluation Result {False}** 
 ![Image Alt]()
 
-# **Initial Page** 
-![Image Alt]()
-
-# **Initial Page** 
+# **Evaluation Result {True}** 
 ![Image Alt]()
