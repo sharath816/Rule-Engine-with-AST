@@ -1,7 +1,8 @@
 # Rule-Engine-with-AST
 
-# A simple 3-tier rule engine application to determine user eligibility based on attributes like age, department, salary, experience etc.
-The rule engie which helps to know the actual rules as provided. 
+# A simple 3-tier rule engine application to determine user eligibility based on attributes like age, department, salary, experience etc.                        
+ The rule engie which helps to know the actual rules as provided.
+ 
 
 # **Steps to run the code :-**
 
