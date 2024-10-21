@@ -6,6 +6,7 @@
 **Step 1:-** Download the code.
 
 **Step 2:-** Click on the file.
+
 **Directs to the Browser**
 
 # **Initial Page** 
