@@ -3,9 +3,9 @@
 # A simple 3-tier rule engine application to determine user eligibility based on attributes like age, department, salary, experience etc.
 # **Steps to run the code :-**
 
-**Step 1:-** Download the code.
+**Step 1 :-** Download the code.
 
-**Step 2:-** Click on the file.
+**Step 2 :-** Click on the file.
 
 **Directs to the default browser with the page as you see below**
 
