@@ -30,10 +30,11 @@
 # **Adding parameter to evaluate** 
 ![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/3b5af52f36dc3c6057843b7a5a2caba75b0f4640/Screenshot%202024-10-21%20183224.png)
 
+# **Evaluation Result {True}** 
+**When given rule satisfy, returns True.** 
+![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/3b5af52f36dc3c6057843b7a5a2caba75b0f4640/Screenshot%202024-10-21%20183344.png)
+
 # **Evaluation Result {False}** 
 **When given rule doesn't satisfy, returns False.**
 ![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/3b5af52f36dc3c6057843b7a5a2caba75b0f4640/Screenshot%202024-10-21%20183324.png)
 
-# **Evaluation Result {True}** 
-**When given rule satisfy, returns True.** 
-![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/3b5af52f36dc3c6057843b7a5a2caba75b0f4640/Screenshot%202024-10-21%20183344.png)
