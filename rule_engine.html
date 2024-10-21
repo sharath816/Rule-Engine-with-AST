@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine Application</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8fcffc;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 5px;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        h5 {
+            font-size: 20px;
+            text-align: center;
+        }
+        
+
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: rgb(137, 190, 243);
+            border-radius: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.779);
+            padding: 20px;
+            margin-bottom: 20px;
+            flex: 1;
+            min-width: 300px;
+            margin-right: 20px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+        }
+        textarea:hover {
+            background-color: #a6d1f97e; 
+        }
+
+        .card:last-child {
+            margin-right: 0;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:last-child {
+            margin-right: 0;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #6c99c8;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .bottom-footer {
+            position: fixed; 
+            left: 0;       
+            bottom: 0;      
+            width: 100%;    
+            color: black;   
+            text-align: center; 
+            padding: 10px 0; 
+            font-size: 15px; 
+        }
+
+        .social-icons {
+            display: flex; 
+            justify-content: center;
+            gap: 35px; 
+        }
+
+        .social-icons .icon {
+            font-size: 35px;
+            color: #3f3f3f; 
+        }
+        .social-icons .icon:hover {
+            color: #1e25d6; 
+            transform: scale(1.25);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rule Engine Application</h1>
+
+        <!-- Card Container for Side by Side Layout -->
+        <div class="card-container">
+
+          <!-- Card for Creating Rule -->
+          <div class="card">
+              <h2>Create Rule</h2>
+              <textarea id="ruleInput" placeholder="Enter rule (e.g., (age > 30 AND department = 'Sales'))"></textarea>
+              <div class="button-group"> 
+                <button id="createRuleButton">Create Rule</button>
+                <button id="combineRulesButton">Combine Rules</button>
+            </div>
+          </div>
+          
+          <!-- Card for Evaluating Rule -->
+          <div class="card">
+              <h2>Evaluate Rule</h2>
+              <textarea id="dataInput" placeholder='Enter user data as JSON (e.g., {"age":35,"department":"Sales","salary":60000,"experience":3})'></textarea>
+              <button id="evaluateRuleButton">Evaluate Rule</button>
+          </div>
+
+      </div>
+       <!-- Results Table -->
+      <h2>Results</h2>
+      <table id="resultsTable">
+          <thead>
+              <tr>
+                  <th>Rule Description</th>
+                  <th>Evaluation Result</th>
+              </tr>
+          </thead>
+          <tbody></tbody>
+      </table>
+    </div>
+    <footer>
+        <!-- CONTACT -->
+        <div class="bottom-footer">
+            <div class="top-header">
+                <h5>Contact Me</h5>
+                <h1 class="title">Sharath M Talawar</h1>
+            </div>
+            <div class="social-icons">        
+                <a href="https://www.linkedin.com/in/sharath-m-talawar/" target="_blank" class="icon">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <a href="mailto:sharathmtalawar@gmail.com" target="_blank" class="icon">
+                    <i class="fas fa-envelope"></i></a>  
+                <a href="https://github.com/sharath816" target="_blank" class="icon">
+                    <i class="uil uil-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const rules = [];
+
+        function createRule(ruleString) {
+            // Basic validation and parsing of the rule string
+            if (!ruleString) return null;
+
+            // Here we would simply parse the rule string into an AST.
+            // For simplicity, we will return the rule string.
+            return { ruleString };
+        }
+
+        function combineRules() {
+            // Combine rules into a single 
+            if (rules.length === 0) return null;
+
+            // For simplicity, just combine the strings
+            const combinedRuleString = rules.map(rule => rule.ruleString).join(' AND ');
+            return { combinedRuleString };
+        }
+
+        function evaluateRule(ast, data) {
+            // Evaluate the combined rule against provided data
+            if (!ast || !data) return false;
+
+            // Here we would implement actual evaluation logic.
+            // For simplicity, we will just simulate evaluation.
+            
+            const evalResult = eval(ast.combinedRuleString.replace(/(\w+)/g, (match) => data[match] || match));
+            
+            return evalResult ? "True" : "False";
+        }
+
+        document.getElementById('createRuleButton').addEventListener('click', () => {
+            const ruleInput = document.getElementById('ruleInput').value.trim();
+            
+            const newRule = createRule(ruleInput);
+            
+            if (newRule) {
+                rules.push(newRule);
+                alert(`Rule created: ${newRule.ruleString}`);
+                document.getElementById('ruleInput').value = ''; // Clear input
+                console.log(rules);
+            } else {
+                alert('Invalid rule.');
+            }
+        });
+
+        document.getElementById('combineRulesButton').addEventListener('click', () => {
+            const combinedRule = combineRules();
+            
+            if (combinedRule) {
+                alert(`Combined Rule: ${combinedRule.combinedRuleString}`);
+                console.log(combinedRule);
+                
+                // Optionally store combined rule for evaluation
+                window.combinedAST = combinedRule; 
+                
+                // Clear results table
+                document.querySelector('#resultsTable tbody').innerHTML = '';
+                
+                // Add combined rule to results table
+                const row = `<tr><td>${combinedRule.combinedRuleString}</td><td></td></tr>`;
+                document.querySelector('#resultsTable tbody').insertAdjacentHTML('beforeend', row);
+                
+                console.log(rules);
+                
+                // Clear input for next combination
+                document.getElementById('ruleInput').value = '';
+                
+                // Reset rules for new combinations
+                rules.length = 0; 
+                
+                console.log(rules);
+                
+                alert(`Combined Rule added to results.`);
+                
+                // Optionally evaluate immediately with sample data
+                const sampleData = { age: 35, department: "Sales", salary: 60000, experience: 3 };
+                const result = evaluateRule(combinedAST, sampleData);
+                
+                document.querySelector('#resultsTable tbody tr:last-child td:last-child').innerText = result;
+
+                
+              } else {
+                  alert('No rules to combine.');
+              }
+          });
+
+          document.getElementById('evaluateRuleButton').addEventListener('click', () => {
+              const dataInput = document.getElementById('dataInput').value.trim();
+              
+              let userData;
+              try {
+                  userData = JSON.parse(dataInput);
+              } catch (error) {
+                  alert('Invalid JSON format.');
+                  return;
+              }
+              
+              const result = evaluateRule(window.combinedAST, userData);
+              
+              // Update last row in results table with evaluation result
+              const lastRow = document.querySelector('#resultsTable tbody tr:last-child');
+              if (lastRow) {
+                  lastRow.cells[1].innerText = result; 
+              }
+          });
+      </script>
+    </body>
+</html>  
