@@ -7,7 +7,7 @@
 
 **Step 2:-** Click on the file.
 
-**Directs to the Browser**
+**Directs to the default browser with the page as you see below**
 
 # **Initial Page** 
 ![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/6347bf6affae6a4bfe1ab4c91834dc22e9262b81/Screenshot%202024-10-21%20182939.png)
