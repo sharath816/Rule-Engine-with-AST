@@ -17,7 +17,7 @@
 ![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/fddc47ab8063611c6638894353b3f98051016d7c/Screenshot%202024-10-21%20183106.png)
 
 # **Combiing the rule** 
-![Image Alt]()
+![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/e65c86d9db889d2ef9da687165aa76a4b0aad9b3/Screenshot%202024-10-21%20183126.png)
 
 # **Combined rule added to the table** 
 ![Image Alt]()
