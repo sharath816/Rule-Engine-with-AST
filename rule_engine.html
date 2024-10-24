@@ -143,11 +143,8 @@
 <body>
     <div class="container">
         <h1>Rule Engine Application</h1>
-
-        <!-- Card Container for Side by Side Layout -->
         <div class="card-container">
 
-          <!-- Card for Creating Rule -->
           <div class="card">
               <h2>Create Rule</h2>
               <textarea id="ruleInput" placeholder="Enter rule (e.g., (age > 30 AND department = 'Sales'))"></textarea>
@@ -201,30 +198,20 @@
         const rules = [];
 
         function createRule(ruleString) {
-            // Basic validation and parsing of the rule string
+          
             if (!ruleString) return null;
 
-            // Here we would simply parse the rule string into an AST.
-            // For simplicity, we will return the rule string.
             return { ruleString };
         }
 
         function combineRules() {
-            // Combine rules into a single 
             if (rules.length === 0) return null;
-
-            // For simplicity, just combine the strings
             const combinedRuleString = rules.map(rule => rule.ruleString).join(' AND ');
             return { combinedRuleString };
         }
 
         function evaluateRule(ast, data) {
-            // Evaluate the combined rule against provided data
             if (!ast || !data) return false;
-
-            // Here we would implement actual evaluation logic.
-            // For simplicity, we will just simulate evaluation.
-            
             const evalResult = eval(ast.combinedRuleString.replace(/(\w+)/g, (match) => data[match] || match));
             
             return evalResult ? "True" : "False";
@@ -238,7 +225,7 @@
             if (newRule) {
                 rules.push(newRule);
                 alert(`Rule created: ${newRule.ruleString}`);
-                document.getElementById('ruleInput').value = ''; // Clear input
+                document.getElementById('ruleInput').value = ''; 
                 console.log(rules);
             } else {
                 alert('Invalid rule.');
@@ -251,30 +238,19 @@
             if (combinedRule) {
                 alert(`Combined Rule: ${combinedRule.combinedRuleString}`);
                 console.log(combinedRule);
-                
-                // Optionally store combined rule for evaluation
                 window.combinedAST = combinedRule; 
-                
-                // Clear results table
                 document.querySelector('#resultsTable tbody').innerHTML = '';
                 
-                // Add combined rule to results table
                 const row = `<tr><td>${combinedRule.combinedRuleString}</td><td></td></tr>`;
                 document.querySelector('#resultsTable tbody').insertAdjacentHTML('beforeend', row);
                 
                 console.log(rules);
-                
-                // Clear input for next combination
                 document.getElementById('ruleInput').value = '';
-                
-                // Reset rules for new combinations
                 rules.length = 0; 
                 
                 console.log(rules);
                 
                 alert(`Combined Rule added to results.`);
-                
-                // Optionally evaluate immediately with sample data
                 const sampleData = { age: 35, department: "Sales", salary: 60000, experience: 3 };
                 const result = evaluateRule(combinedAST, sampleData);
                 
@@ -298,8 +274,6 @@
               }
               
               const result = evaluateRule(window.combinedAST, userData);
-              
-              // Update last row in results table with evaluation result
               const lastRow = document.querySelector('#resultsTable tbody tr:last-child');
               if (lastRow) {
                   lastRow.cells[1].innerText = result; 
