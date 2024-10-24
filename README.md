@@ -6,7 +6,9 @@
 
 **Step 1 :-** Download the code.
 
-**Step 2 :-** Click on the file.
+**Step 2 :-** Right click on the file.
+
+**Step 3 :-** Click on the open with then any browser.
 
 **Directs to the default browser with the page as you see below**
 
