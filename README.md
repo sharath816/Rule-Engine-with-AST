@@ -27,7 +27,7 @@
 # **Combined rule added to the table** 
 ![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/3b5af52f36dc3c6057843b7a5a2caba75b0f4640/Screenshot%202024-10-21%20183142.png)
 
-# **After adding thecombined rule to the table** 
+# **After adding the combined rule to the table** 
 ![Image Alt](https://github.com/sharath816/Rule-Engine-with-AST/blob/3b5af52f36dc3c6057843b7a5a2caba75b0f4640/Screenshot%202024-10-21%20183157.png)
 
 # **Adding parameter to evaluate** 
